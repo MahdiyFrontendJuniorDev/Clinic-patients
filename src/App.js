@@ -1,8 +1,11 @@
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
 function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold underline">Hello world!</h1>;
-      <p>New project is very Cool!  </p>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
